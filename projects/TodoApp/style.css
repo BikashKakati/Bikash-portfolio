@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: rgb(163, 218, 228)
+}
+:root{
+    --bg-color: #f8f4f4;
+    --font-color: #000;
+}
+.dark-theme{
+    --bg-color: rgb(53, 55, 57);
+    --font-color: #fff;
+}
+
+
+
+.todo-container {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    background: var(--bg-color);
+    margin: 50px auto 30px;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.5s;
+}
+.todo-container header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 20px;
+}
+.todo-container header .dark-btn{
+    width: 45px;
+    border-radius: 12px;
+    background: #ccc;
+    padding: 2px 3px;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+}
+.todo-container header .dark-btn::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--bg-color);
+}
+.todo-container header .dark-btn.on{
+    padding-left: 22px;
+}
+.todo-container header h1 {
+    color:var(--font-color);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 64px;
+
+
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 15px 54px 15px 22px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.input-container input:focus{
+    border: 2px solid rgb(43, 151, 219);
+}
+
+.input-container button {
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    margin-right: 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background: rgb(43, 151, 219);
+    padding: 4px;
+    right: 1%;
+    top: 27%;
+}
+.input-container button:active{
+    background: rgb(3, 86, 202);
+}
+
+.todo-list-container {
+    margin-top: 20px;
+    max-height: 300px;
+    height: 100%;
+    overflow: auto;
+}
+
+.todo-list-container li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    list-style: none;
+    background: rgb(43, 151, 219);
+    margin-bottom: 10px;
+    padding: 10px 8px;
+    color:var(--font-color);
+    font-size: 18px;
+    border: 1px solid rgb(165, 168, 197);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.todo-list-container li span {
+    margin: 0 30px 0 15px;
+    text-transform: capitalize;
+}
+
+.todo-list-container li .delete {
+    position: absolute;
+    background: rgb(239, 59, 4);
+    padding: 10px 15px;
+    border-radius: 3px;
+    color:var(--font-color);
+    right: -48px;
+    transition: all 0.3s ease;
+}
+
+.todo-list-container li .edit {
+    position: absolute;
+    background: rgb(43, 235, 9);
+    padding: 10px 15px;
+    border-radius: 3px;
+    color:var(--font-color);
+    right: -48px;
+    transition: all 0.3s ease;
+}
+
+.todo-list-container li:hover .delete {
+    right: 0px;
+}
+
+.todo-list-container li:hover .edit {
+    right: 50px;
+}
+
+
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 2px 10px 2px;
+}
+
+.footer span {
+    font-size: 20px;
+    color:var(--font-color);
+    text-transform: capitalize;
+    user-select: none;
+}
+
+.footer button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(43, 151, 219);
+    color:var(--font-color);
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+}
+
+.footer button:hover {
+    background: rgb(3, 90, 211);
+}

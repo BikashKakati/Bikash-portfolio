@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
+:root{
+    --skin-color: #46fa22;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none; border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Nunito',sans-serif;
+}
+*::selection{
+    background: var(--skin-color);
+    color: #333;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+    
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--skin-color);
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.home a{
+    width: 19rem;
+}
+.btn{
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+
+}
+.btn i{
+    padding: 0.5rem;
+    font-size: 1.8rem;
+}
+.btn:active{
+    background: var(--skin-color);
+}
+.btn:hover{
+    background: var(--skin-color);
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+.heading span{
+    color: var(--skin-color);
+}
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid var(--skin-color);
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+header .user img:hover{
+    transform: translateY(2.8rem);
+}
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+}
+header .user .post{
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+    background: var(--skin-color);
+}
+
+#menu{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 100;
+    display: none;
+}
+/* ------------skin color change ------------*/
+#skin-color{
+    position: fixed;
+    top: 8rem; right: 2rem;
+    border-radius: 50%;
+    background: #333;
+    color: var(--skin-color);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem;
+    z-index: 100;
+}
+#skin-color .container{
+    position: fixed;
+    top: 13rem; right: 2rem;
+    flex-flow: column;
+    align-items: center;
+    border-radius: .8rem;
+    padding: .8rem;
+    width: 4.5rem;
+    background: #333;
+    display: none;
+}
+#skin-color .container.on{
+    display: flex;
+}
+#skin-color .container span{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.home h2{
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 20rem;
+    margin-left: -10rem;
+}
+.home span{
+    color: var(--skin-color);
+    border-bottom: 0 solid var(--skin-color);
+}
+.home h2:hover span{
+    border-bottom: .4rem solid var(--skin-color);
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.home h1{
+    font-size: 5rem;
+    color: #fff;
+}
+.home h1 span{
+    font-size: 5rem;
+    color: var(--skin-color);
+}
+.home p{
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color: var(--skin-color);
+    padding: 1rem 0;
+    font-weight: 600;
+}
+.about .row .info h3 span{
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+.about .row .counter{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #222;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+.about .row .counter .box-2{
+    width: 40.5rem;
+    background: #222;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: var(--skin-color);
+}
+.about .row .counter .box-2 span{
+    font-size: 4rem;
+    color: var(--skin-color);
+    border-bottom: 1px solid var(--skin-color);
+}
+.about .row .counter .box-2 .skill{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about .row .counter .box-2 .skill .skill-img{
+    width: 7rem;
+    height: 7rem;
+    margin: 2rem 2rem;
+    background: #333;
+    padding: .9rem;
+    border-radius: .6rem;
+    transition: transform 0.3s;
+}
+.skill .skill-img:hover{
+    transform: translateY(-1.5rem);
+}
+.counter .box-2 .skill .skill-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+
+}
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    padding-top: 1rem 0;
+}
+.education .box-container .box i{
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--skin-color);
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.portfolio .box-container .box{
+    height: 20rem;
+    width: 28rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: .2rem solid var(--skin-color);
+    transition: transfrom 0.5s;
+}
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.portfolio .box-container .box:hover img{
+    transform: scale(1.1);
+}
+.portfolio .box-container .box .layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--skin-color)) ;
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    transition: height 0.5s;
+
+}
+.portfolio .box-container .box:hover .layer{
+    height: 100%;
+}
+.portfolio .box-container .box .layer h3{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+
+}
+.layer a{
+    margin-top: 2rem;
+    color: var(--skin-color);
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 6rem;
+    background: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    padding-bottom: 4rem;
+}
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+
+}
+#msg{
+    color: var(--skin-color);
+    margin-left: 2rem;
+    font-size: 2rem;
+    margin-left: 0rem 5rem;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+    text-transform: capitalize;
+
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .title:hover{
+    color: var(--skin-color);
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--skin-color);
+}
+
+.contact .row .content .info .social-handling{
+    display: flex;
+    align-items: center;
+}
+.content .info .social-handling a{
+    display: inline-block;
+    margin: 2rem 1.5rem;
+}
+.social-handling a i{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--skin-color);
+
+}
+
+
+/* ----------------media queries--------- */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    #menu{
+        display: block;
+    }
+
+    header{
+        left: -120%;
+    }
+    header.on{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+    .home{
+        padding: 1rem 5rem;
+    }
+    .home h2{
+        margin-bottom: 22rem;
+        margin-left: 0rem;
+    }
+}
+@media (max-width:400px){
+
+
+    header{
+        width: 100%;
+    }
+    .heading{
+        margin: 0 3rem;
+    }
+    .home h2{
+        margin-bottom: 10rem;
+        margin-left: -2rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .portfolio .box-container .box{
+        width: 100%;
+    }
+    .contact .row form{
+        margin: 3rem 0;
+    }
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="form-details">
+        <header>resume form </header>
+        <h6>for software engineer's</h6>
+        
+
+        <div class="details-box">
+            <span class="title">personal details</span>
+            <div class="fields">
+                <div class="box">
+                    <label>full name</label>
+                    <input id="name-F" type="text" placeholder="Enter your name">
+                </div>
+                <div class="box">
+                    <label>skill</label>
+                    <input id="skill-F" type="text" placeholder="Ex: Data Engineer">
+                </div>
+                <div class="box">
+                    <label>contacts</label>
+                    <input id="phone-F" type="tel" placeholder="Enter your phone">
+                </div>
+            </div>
+            <div class="fields">
+                <div class="box">
+                    <label>city</label>
+                    <input  id="city-F" type="text" placeholder="Enter your city">
+                </div>
+                <div class="box">
+                    <label>state</label>
+                    <input  id="state-F" type="text" placeholder="Enter your state">
+                </div>
+                <div class="box">
+                    <label>country</label>
+                    <input  id="country-F" type="text" placeholder="Enter your country">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="details-box">
+            <span class="title">education details</span>
+            <div class="large-box edu">
+                <div class="fields">
+                    <div class="box">
+                        <label>ending month -year(Degree)</label>
+                        <input class="degree-one" type="text" placeholder="month year">
+                    </div>
+                    <div class="box">
+                        <label>degree</label>
+                        <input class="degree-one" type="text" placeholder="Ex: BTech in CS">
+                    </div>
+                    <div class="box">
+                        <label>institute</label>
+                        <input class="degree-one" type="text" placeholder="Enter your college name">
+                    </div>
+                    <div class="box">
+                        <label>CGPA</label>
+                        <input class="degree-one" type="text" placeholder="Enter your CGPA">
+                    </div>
+                </div>
+
+                <!-- <button type="button" class="btn edu">add another degree</button> -->
+
+                <div class="fields">
+                    <div class="box">
+                        <label>ending month -year(12th)</label>
+                        <input class="twelve-one"  type="text" placeholder="month year">
+                    </div>
+                    <div class="box">
+                        <label>class 12</label>
+                        <input class="twelve-one"  type="text" placeholder="Enter your stream">
+                    </div>
+                    <div class="box">
+                        <label>institute</label>
+                        <input class="twelve-one"  type="text" placeholder="Enter your school">
+                    </div>
+                    <div class="box">
+                        <label>parcentage</label>
+                        <input class="twelve-one"  type="text" placeholder="Enter your percentage">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="details-box">
+            <span class="title">Social details</span>
+            <div class="fields">
+                <div class="box">
+                    <label>g mail</label>
+                    <input type="text" placeholder="valid email" id="gmail-F" style="text-transform: lowercase;">
+                </div>
+                <div class="box">
+                    <label>portfolio website</label>
+                    <input type="text" placeholder="write here" id="portfolio-F" style="text-transform: lowercase;">
+                </div>
+                <div class="box">
+                    <label>linkedin</label>
+                    <input type="text" placeholder="paste link here" id="linkedin-F" style="text-transform: lowercase;">
+                </div>
+            </div>
+            <div class="fields">
+                <div class="box">
+                    <label>github</label>
+                    <input type="text" placeholder="paste link here" id="github-F" style="text-transform: lowercase;">
+                </div>
+                <div class="box">
+                    <label>profile image</label>
+                    <input type="file" id="profile-F">
+                </div>
+                <div class="box">
+                    <label>hobbies</label>
+                    <input type="text" placeholder="your hobbies" id="hobbies-F">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="details-box">
+            <span class="title">Skills</span>
+            <div class="fields">
+                <div class="box">
+                    <label>frontend technologies</label>
+                    <input type="text" placeholder="write here" id="frontech-F">
+                </div>
+                <div class="box">
+                    <label>backend technologies</label>
+                    <input type="text" placeholder="write here" id="backtech-F">
+                </div>
+                <div class="box">
+                    <label>others</label>
+                    <input type="text" placeholder="Ex: git, VS code" id="othertech-F">
+                </div>
+            </div>
+            <div class="fields text-area">
+                <label>write about your profile</label>
+                <textarea cols="30" rows="10" placeholder="60-70 workds" id="aboutu-F"></textarea>
+            </div>
+        </div>
+
+
+        <div class="details-box">
+            <span class="title">professional works</span>
+            <div class="large-box company">
+                <div class="fields">
+                    <div class="box">
+                        <label>year</label>
+                        <input type="text" placeholder="from__ to__" class="company-one">
+                    </div>
+                    <div class="box">
+                        <label>company name</label>
+                        <input type="text" placeholder="write here" class="company-one">
+                    </div>
+                    <div class="box">
+                        <label>post</label>
+                        <input type="text" placeholder="write here" class="company-one">
+                    </div>
+                </div>
+                <div class="fields text-area">
+                    <label>write about your works</label>
+                    <textarea name="" cols="30" rows="10" placeholder="30 to 40 words" id="company-one"></textarea>
+            </div>
+            </div>
+            <div class="large-box company">
+                <div class="fields">
+                    <div class="box">
+                        <label>year</label>
+                        <input type="text" placeholder="from__ to__" class="company-two">
+                    </div>
+                    <div class="box">
+                        <label>company name</label>
+                        <input type="text" placeholder="write here" class="company-two">
+                    </div>
+                    <div class="box">
+                        <label>post</label>
+                        <input type="text" placeholder="write here" class="company-two">
+                    </div>
+                </div>
+                <div class="fields text-area">
+                    <label>write about your works</label>
+                    <textarea name="" cols="30" rows="10" placeholder="30 to 40 words" id="company-two"></textarea>
+                </div>
+            </div>
+            
+            <!-- <button type="button" class="btn company">add+ more</button> -->
+        </div>
+
+
+        <div class="details-box">
+            <span class="title">recent projects</span>
+            <div class="large-box project">
+                <div class="fields">
+                    <div class="box">
+                        <label>date</label>
+                        <input type="text" placeholder="from__ to__" class="project-one">
+                    </div>
+                    <div class="box">
+                        <label>project name</label>
+                        <input type="text" placeholder="write here" class="project-one">
+                    </div>
+                    <div class="box">
+                        <label>link</label>
+                        <input type="text" placeholder="paste here" class="project-one" style="text-transform: lowercase;">
+                    </div>
+                </div>
+                <div class="fields text-area">
+                    <label>write about your project</label>
+                    <textarea name="" cols="30" rows="10" placeholder="30 to 40 words" id="project-one"></textarea>
+                </div>
+            </div>
+            <div class="large-box project">
+                <div class="fields">
+                    <div class="box">
+                        <label>date</label>
+                        <input type="text" placeholder="from__ to__" class="project-two">
+                    </div>
+                    <div class="box">
+                        <label>project name</label>
+                        <input type="text" placeholder="write here" class="project-two">
+                    </div>
+                    <div class="box">
+                        <label>link</label>
+                        <input type="text" placeholder="paste here" class="project-two" style="text-transform: lowercase;">
+                    </div>
+                </div>
+                <div class="fields text-area">
+                    <label>write about your project</label>
+                    <textarea name="" cols="30" rows="10" placeholder="30 to 40 words" id="project-two"></textarea>
+                </div>
+            </div>
+            <div class="large-box project">
+                <div class="fields">
+                    <div class="box">
+                        <label>date</label>
+                        <input type="text" placeholder="from__ to__" class="project-three">
+                    </div>
+                    <div class="box">
+                        <label>project name</label>
+                        <input type="text" placeholder="write here" class="project-three">
+                    </div>
+                    <div class="box">
+                        <label>link</label>
+                        <input type="text" placeholder="paste here" class="project-three" style="text-transform: lowercase;">
+                    </div>
+                </div>
+                <div class="fields text-area">
+                    <label>write about your project</label>
+                    <textarea name="" cols="30" rows="10" placeholder="30 to 40 words" id="project-three"></textarea>
+                </div>
+            </div>
+
+            <!-- <button type="button" class="btn project">add+ more</button> -->
+        </div>
+
+
+
+
+        <button type="button" id="resume-gnrte" class="btn">generate resume</button>
+        <button type="button" id="reset-form" class="btn">reset-form</button>
+
+
+    </div>
+
+
+
+
+
+<!------------- template-container----------- -->
+
+
+
+
+    <div class="template-container">
+        <!--  -->
+        <div class="left-container">
+            <div class="profile-text">
+                <div class="image-div">
+                    <img src="image/heroimg.webp" id="profile-T">
+                </div>
+                <h2 id="name-T">bikash kakati baishya <br></h2>
+                <span id="skill-T">frontend developer</span>
+            </div>
+
+            <div class="contact-info">
+                <h3 class="title">contact info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone"></i></span>
+                        <span class="text" id="phone-T">+21-5793902092</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope"></i></span>
+                        <span class="text" id="gmail-T">g mail</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe"></i></span>
+                        <a href="" class="text" id="portfolio-T">portfolio website</a>
+                    </li>
+                    <li>
+
+                        <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                        <a href="" class="text" id="linkedin-T">linkedin</a>
+                    </li>
+                    <li>
+
+                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                        <a href="" class="text" id="github-T">github</a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span id="address-T" class="text">Guwahati, Assam, India</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-info education">
+                <h3 class="title">education</h3>
+                <ul id="degree-T">
+                    <!-- <li>
+                        <h5>2019 august</h5>
+                        <h4>bachelor of science</h4>
+                        <h6>s b m s college</h6>
+                        <span>CGPA</span><span> 7.8</span>
+                    </li>
+                    <li>
+                        <h5>2019 november</h5>
+                        <h4>bachelor of science</h4>
+                        <h6>s b m s college</h6>
+                        <span>percentage</span><span> 65%</span>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <div class="contact-info ">
+                <h2 class="title">hobbies</h2>
+                <span id="hobbies-T">painting, dancing, music etc</span>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="right-container">
+            <div class="about">
+                <h2 class="title2">profile</h2>
+                <p  id="aboutu-T"> your profile here-----</p>
+            </div>
+
+            <div class="about">
+                <h2 class="title2" id="company-title">professional work</h2>
+                <div class="box" id="company-T-one">
+                    <!-- <div class="year-company">
+                        <h5>2019</h5>
+                        <h5>XYZ company</h5>
+                    </div>
+                    <div class="text">
+                        <h4>frontend developer</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dicta porro illum tempore
+                            culpa fugit!</p>
+                    </div> -->
+                </div>
+
+                <div class="box" id="company-T-two">
+                    <!-- <div class="year-company">
+                        <h5>2019</h5>
+                        <h5>XYZ company</h5>
+                    </div>
+                    <div class="text">
+                        <h4>frontend developer</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dicta porro illum tempore
+                            culpa fugit!</p>
+                    </div> -->
+                </div>
+            </div>
+
+
+
+            <div class="about projects">
+                <h2 class="title2">projects</h2>
+                <div class="box" id="project-T-one">
+                    <!-- <div class="year-company">
+                        <h5>2019</h5>
+                        <h4>ecommerce app</h4>
+                    </div>
+                    <div class="text">
+                        <a href="#">link</a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dicta porro illum tempore
+                            culpa fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus enim modi
+                            quisquam voluptatem, quod veritatis.</p>
+                    </div> -->
+                </div>
+
+                <div class="box" id="project-T-two">
+                    <!-- <div class="year-company">
+                        <h5>2019</h5>
+                        <h4>ecommerce app</h4>
+                    </div>
+                    <div class="text">
+                        <a href="#">link</a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dicta porro illum tempore
+                            culpa fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus enim modi
+                            quisquam voluptatem, quod veritatis.</p>
+                    </div> -->
+                </div>
+
+                <div class="box" id="project-T-Three">
+
+                </div>
+            </div>
+
+            <div class="contact-info lang">
+                <h3 class="title">technologies</h3>
+                <ul>
+                    <li>
+                        <span class="tech-t">frontend tech</span>
+                        <span id="frontech-T">html, css, javascript</span>
+                    </li>
+                    <li>
+                        <span class="tech-t">backend tech</span>
+                        <span id="backtech-T">c++, python, java</span>
+                    </li>
+                    <li>
+                        <span class="tech-t">others</span>
+                        <span id="othertech-T">github, vs code</span>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <button class="print-resume">print resume</button>
+        <button class="print-resume back-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
